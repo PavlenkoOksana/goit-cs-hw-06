@@ -20,4 +20,4 @@ COPY --from=socket-server /app /socket-server
 COPY docker-entrypoint.sh /
 RUN chmod +x /docker-entrypoint.sh
 
-ENTRYPOINT ["/docker-entrypoint.sh"]
+ENTRYPOINT ["python", "socket_server.py"]
