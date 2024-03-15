@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 # Verbindung zur MongoDB-Datenbank herstellen
 client = MongoClient('mongodb://localhost:27017/')
-db = client['form_data']  # Datenbank 'form_data' auswählen
+db = client['chat_database']  # Datenbank 'form_data' auswählen
 collection = db['entries']  # Collection 'entries' auswählen
 
 # Socket-Server einrichten
